@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SWIPER - SLIDER -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <!-- LINKS -->
     <link rel="stylesheet" href="/css/main.css">
     <!-- FONTS -->
@@ -38,10 +41,7 @@
 
     <article class="cadastro__box">
         <h1 class="cadastro__titulo">Cadastro:</h1>
-        
-        <div class="">
 
-        </div>
         <form class="form__cadastro">
             <select  class="select__cadastro" name="recargas" id="">
                 <option selected disabled>Tipo de Recarga</option>
@@ -74,9 +74,27 @@
             </div>
         </form>
 
+        <section class="cadastros__mes--menu">
+            
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                  </div>
+                
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+           
+
+        </section>
+
     </article>
 
 
-
+    
 </body>
 </html>
