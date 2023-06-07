@@ -4,6 +4,7 @@ const setores = document.querySelector(".js-cadastro-setores");
 const meses = document.querySelector(".js-cadastro-meses");
 const data = document.querySelector('input[type="datetime-local"]');
 const btnSalvar = document.querySelector(".js-btn-cadastro-salvar");
+const recargas_lista = [];
 
 btnSalvar.addEventListener("click", (e) => {
     e.preventDefault();
@@ -29,15 +30,14 @@ btnSalvar.addEventListener("click", (e) => {
     const janeiro = document.querySelector(".js-janeiro");
     janeiro.appendChild(janeiro_cards);
 
-    recarga.value = "";
-    impressora.value = "";
-    setor.value = "";
-    dataAtual.value = "";
-
-    const recargas_lista = [];
     recargas_lista.push(janeiro_cards);
     
     console.log(recargas_lista);
+
+    recargas.value = "";
+    impressoras.value = "";
+    setores.value = "";
+    data.value = "";
 
 
 });
