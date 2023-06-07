@@ -13,9 +13,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;1,900&family=Rowdies&display=swap" rel="stylesheet">
     <!-- Animations - Icons -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+     <!-- JAVASCRIP -->
+     <script src="/js/cadastro.js" defer></script>
     <!-- TÍTULO -->
     <title>CADASTRO</title>
 </head>
+
 <body class="container__cadastro">
 
     <header class="header__cadastro">
@@ -43,13 +46,13 @@
         <h1 class="cadastro__titulo">Cadastro:</h1>
 
         <form class="form__cadastro">
-            <select  class="select__cadastro" name="recargas" id="">
+            <select  class="select__cadastro js-cadastro-recargas" name="recargas">
                 <option selected disabled>Tipo de Recarga</option>
-                <option value="recarga-po">Recarga - Pó</option>
-                <option value="recarga-tinta">Recarga - Tinta</option>
+                <option value="Pó">Pó</option>
+                <option value="Tinta">Tinta</option>
             </select>
 
-            <select class="select__cadastro"  name="impressoras" id="">
+            <select class="select__cadastro"  name="impressoras">
                 <option selected disabled>Impressora</option>
                 <option value="ricoh">Ricoh</option>
                 <option value="brother">Brother</option>
@@ -58,7 +61,7 @@
                 <option value="lexmark">Lexmark</option>
             </select>
 
-            <select class="select__cadastro"  name="setores" id="">
+            <select class="select__cadastro"  name="setores">
                 <option selected disabled class="select__cadastro--option">Setor</option>
                 <option value="educação" class="select__cadastro--option">Educação</option>
                 <option value="brother" class="select__cadastro--option">Gabinete do Prefeito</option>
@@ -71,7 +74,7 @@
 
             <button class="btn__cadastro">
                 <img src="/img/img-btn-salvar.png" alt="Icone de Seleção" class="btn__ico" >
-                <p class="btn__cadastro--nome">Salvar</p>
+                <p class="btn__cadastro--nome js-btn-cadastro-salvar">Salvar</p>
             </button>
         </form>
 
