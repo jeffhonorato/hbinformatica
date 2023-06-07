@@ -1,14 +1,16 @@
 .cadastros__mes--menu {
-
+    background-color: darkgreen;
+    
 
     .cadastro__mes--nome {
         background-color: $cor-link;
         width: 200px;
-        height: 50px;
+        height: 100px;
         display: grid;
         place-content: center;
-        border-radius: 30px;
-        font-size: 2rem;
+        font-size: 4rem;
+        font-family: $fonte-corpo;
+        border-radius: 6px;
         
 
     }
