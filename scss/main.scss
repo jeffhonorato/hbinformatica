@@ -28,4 +28,7 @@ html {
 }
 
 // MONTAGEM DA PÁGINA 
-@import "../scss/header";
+@import "../scss/estatisticas/header";
+@import "../scss/estatisticas/estatisticas-cards";
+@import "../scss/cadastro/header-cadastro";
+@import "../scss/cadastro/cards-cadastros";

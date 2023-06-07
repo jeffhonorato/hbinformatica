@@ -1,12 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+    <!-- LINKS -->
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;1,900&family=Rowdies&display=swap" rel="stylesheet">
+    <!-- Animations - Icons -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- TÍTULO -->
+    <title>CADASTRO</title>
 </head>
-<body>
-    <h1>Cadastro</h1>
+<body class="container__cadastro">
+
+    <header class="header__cadastro">
+
+        <div class="cabecalho__cadastro">
+
+            <ul class="nav__links--cadastro">
+                <a href="/index.html" class="nav__link--cadastro">
+                    <li class="nav__nome--cadastro">Inicio</li>
+                </a>
+    
+                <a href="/pages/mapeamento.html" class="nav__link">
+                    <li class="nav__nome">Mapeamento</li>
+                </a>
+            </ul>
+
+            <picture>
+                <img src="/img/logo.png" alt="logo" class="img__logo"> 
+            </picture>                  
+        </div>
+ 
+     </header>
+
+    <article class="cadastro__box">
+        <h1 class="cadastro__titulo">Cadastro</h1>
+
+        <form class="form__cadastro">
+
+            <select name="recargas" id="">
+                <option selected disabled>Tipo de Recarga</option>
+                <option value="recarga-po">Recarga - Pó</option>
+                <option value="recarga-tinta">Recarga - Tinta</option>
+            </select>
+
+            <select name="impressoras" id="">
+                <option selected disabled>Impressora</option>
+                <option value="ricoh">Ricoh</option>
+                <option value="brother">Brother</option>
+                <option value="canon">Canon</option>
+                <option value="hp">HP</option>
+                <option value="lexmark">Lexmark</option>
+            </select>
+
+            <select name="impressoras" id="">
+                <option selected disabled>Setor</option>
+                <option value="educação">Educação</option>
+                <option value="brother">Gabinete do Prefeito</option>
+                <option value="canon">Hospital</option>
+                <option value="hp">Esporte</option>
+                <option value="lexmark">Denutran</option>
+            </select>
+
+            <input type="datetime-local" class="data">
+
+            <div class="btn__cadastro">
+                <button class="btn__salvar">Salvar</button>
+            </div>
+        </form>
+
+    </article>
+
+
+
 </body>
 </html>
