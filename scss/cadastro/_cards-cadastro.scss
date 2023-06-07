@@ -23,7 +23,7 @@
         border-radius: 20px;
         background: rgb(161,61,210);
         background: rgb(88,230,178);
-background: linear-gradient(0deg, rgba(88,230,178,0.5970763305322129) 0%, rgba(204,228,97,1) 100%);
+        background: linear-gradient(0deg, rgba(88,230,178,0.5970763305322129) 0%, rgba(204,228,97,1) 100%);
         box-shadow: 2px 2px 8px 2px #fff;
         cursor: pointer;
 
@@ -31,10 +31,55 @@ background: linear-gradient(0deg, rgba(88,230,178,0.5970763305322129) 0%, rgba(2
             box-shadow: 4px 0px 5px 1px $cor-link;
             transition: all .5s;
             background-color: #e0ffb8;
+        }        
+    }
+
+    .cadastro__mês--conteudo {
+
+        .mes--titulo {
+            font-family: $fonte-corpo;
+            font-weight: bold;
+            font-size: 3rem;
+            color: $cor-link;
+            margin-bottom: 2rem;
         }
 
-       
-        
+        .janeiro__cards {
+            display: flex;
+            align-items: center;
+            gap: .6rem;
+        }
+
+        .janeiro__card {
+            width: 250px;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 2px 2px 2px 2px $cor-link;
+            padding: .4rem;
+            border-radius: 10px;
+
+            &:hover {
+                background-color: $cor-link;
+                transition: all .5s;
+                box-shadow: 2px 2px 2px 2px #fff;
+            }
+        }
+
+        .card__recarga,
+        .card__impressora,
+        .card__setor,
+        .card__data {
+            font-family: $fonte-corpo;
+            font-size: 1.3rem;
+        }
+
+
+
+
+
+
+
+
     }
 
 }

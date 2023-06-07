@@ -15,6 +15,20 @@ btnSalvar.addEventListener("click", (e) => {
     const dataAtual = data.value;
     
 
-    return console.log(recarga, impressora, setor, mes, dataAtual)
+    const janeiro_cards = document.querySelector(".js-janeiro-cards");
+
+    janeiro_cards.innerHTML = `
+    <div class="janeiro__card">
+        <p class="card__recarga"><strong>Recarga:</strong> ${recarga}</p>
+        <p class="card__impressora"><strong>Impressora:</strong> ${impressora}</p>
+        <p class="card__setor"><strong>Setor:</strong> ${setor}</p>
+        <p class="card__data"><strong>Data:</strong> ${dataAtual}</p>
+    </div>
+    `
+
+    const janeiro = document.querySelector(".js-janeiro");
+    janeiro.appendChild(janeiro_cards);
+
+
 });
 
