@@ -52,7 +52,7 @@
                 <option value="Tinta">Tinta</option>
             </select>
 
-            <select class="select__cadastro"  name="impressoras">
+            <select class="select__cadastro js-cadastro-impressoras" name="impressoras">
                 <option selected disabled>Impressora</option>
                 <option value="ricoh">Ricoh</option>
                 <option value="brother">Brother</option>
@@ -61,16 +61,32 @@
                 <option value="lexmark">Lexmark</option>
             </select>
 
-            <select class="select__cadastro"  name="setores">
+            <select class="select__cadastro js-cadastro-setores" name="setores">
                 <option selected disabled class="select__cadastro--option">Setor</option>
                 <option value="educação" class="select__cadastro--option">Educação</option>
-                <option value="brother" class="select__cadastro--option">Gabinete do Prefeito</option>
-                <option value="canon" class="select__cadastro--option">Hospital</option>
-                <option value="hp" class="select__cadastro--option">Esporte</option>
-                <option value="lexmark" class="select__cadastro--option">Denutran</option>
+                <option value="Gabinete Prefeito" class="select__cadastro--option">Gabinete do Prefeito</option>
+                <option value="Hospital" class="select__cadastro--option">Hospital</option>
+                <option value="Sec. Esporte" class="select__cadastro--option">Esporte</option>
+                <option value="Denutran" class="select__cadastro--option">Denutran</option>
             </select>
 
-            <input type="datetime-local" class="data">
+            <select  class="select__cadastro js-cadastro-meses" name="recargas">
+                <option selected disabled>Mês da Recarga</option>
+                <option value="Janeiro">Janeiro</option>
+                <option value="Fevereiro">Fevereiro</option>
+                <option value="Março">Março</option>
+                <option value="Abril">Abril</option>
+                <option value="Maio">Maio</option>
+                <option value="Junho">Junho</option>
+                <option value="Julho">Julho</option>
+                <option value="Agosto">Agosto</option>
+                <option value="Setembrop">Setembro</option>
+                <option value="Outubro">Outubro</option>
+                <option value="Novembro">Novembro</option>
+                <option value="Dezembro">Dezembro</option>
+            </select>
+
+            <input type="datetime-local" class="data js-data">
 
             <button class="btn__cadastro">
                 <img src="/img/img-btn-salvar.png" alt="Icone de Seleção" class="btn__ico" >
@@ -116,7 +132,18 @@
 
             </div>
 
-        
+            <div class="cadastro__mês--conteudo">
+
+                <div class="janeiro">
+
+                    <h2 class="mes--titulo">Janeiro</h2>
+
+                    <div class="janeiro__cards">
+                        <div></div>
+                    </div>
+                </div>
+
+            </div>
             
 
         </section>
