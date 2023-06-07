@@ -5,17 +5,36 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        gap: .6rem;
+        flex-wrap: wrap;
     }
 
-    .cadastro__mes--nome {
-        background-color: $cor-link;
-        width: 200px;
+    .cadastro__mes--item {
+        padding: .4rem;
+    }
+
+    .cadastro__mes--nome {      
+        width: 100px;
         height: 100px;
         display: grid;
         place-content: center;
-        font-size: 4rem;
+        font-size: 1.5rem;
         font-family: $fonte-corpo;
-        border-radius: 6px;
+        border-radius: 20px;
+        background: rgb(161,61,210);
+        background: rgb(88,230,178);
+background: linear-gradient(0deg, rgba(88,230,178,0.5970763305322129) 0%, rgba(204,228,97,1) 100%);
+        box-shadow: 2px 2px 8px 2px #fff;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: 4px 0px 5px 1px $cor-link;
+            transition: all .5s;
+            background-color: #e0ffb8;
+        }
+
+       
+        
     }
 
 }
