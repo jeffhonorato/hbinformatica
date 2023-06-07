@@ -1,5 +1,18 @@
 .cadastros__mes--menu {
-   
+
+
+    .cadastro__mes--nome {
+        background-color: $cor-link;
+        width: 200px;
+        height: 50px;
+        display: grid;
+        place-content: center;
+        border-radius: 30px;
+        font-size: 2rem;
+        
+
+    }
+
 }
 
 .swiper {
@@ -11,12 +24,9 @@
   .swiper-slide {
     background-position: center;
     background-size: cover;
-    width: 300px;
-    height: 300px;
+    width: 100px;
+    
   }
 
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-  }
+
 
