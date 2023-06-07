@@ -41,17 +41,17 @@
             background: transparent;
         }
 
-        .btn__salvar {
-            border: none;
-            font-family: $fonte-corpo;
-            font-size: 1.4rem;
+        .btn__cadastro {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 100px;
             padding: .4rem;
             border-radius: 20px;
             background-color: $cor-link;
             color: #000;
             cursor: pointer;
-            width: 100px;
-            font-weight: bold;
+            border: none;
             box-shadow: 4px 0px 5px 1px #fff;
 
             &:hover {
@@ -59,6 +59,16 @@
                 transition: all .5s;
                 background-color: #e0ffb8;
             }
+        }
+
+        .btn__cadastro--nome {
+            font-family: $fonte-corpo;
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+
+        .btn__ico {
+            width: 20px;
         }
 
 

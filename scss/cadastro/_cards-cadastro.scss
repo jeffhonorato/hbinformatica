@@ -1,6 +1,11 @@
-.cadastros__mes--menu {
-    background-color: darkgreen;
-    
+.cadastros__mes--box {
+    margin-top: 10rem;
+
+    .cadastro__mes--menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     .cadastro__mes--nome {
         background-color: $cor-link;
@@ -11,24 +16,10 @@
         font-size: 4rem;
         font-family: $fonte-corpo;
         border-radius: 6px;
-        
-
     }
 
 }
 
-.swiper {
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-
-  .swiper-slide {
-    background-position: center;
-    background-size: cover;
-    width: 100px;
-    
-  }
 
 
 
