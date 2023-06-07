@@ -37,17 +37,19 @@
      </header>
 
     <article class="cadastro__box">
-        <h1 class="cadastro__titulo">Cadastro</h1>
+        <h1 class="cadastro__titulo">Cadastro:</h1>
+        
+        <div class="">
 
+        </div>
         <form class="form__cadastro">
-
-            <select name="recargas" id="">
+            <select  class="select__cadastro" name="recargas" id="">
                 <option selected disabled>Tipo de Recarga</option>
                 <option value="recarga-po">Recarga - Pó</option>
                 <option value="recarga-tinta">Recarga - Tinta</option>
             </select>
 
-            <select name="impressoras" id="">
+            <select class="select__cadastro"  name="impressoras" id="">
                 <option selected disabled>Impressora</option>
                 <option value="ricoh">Ricoh</option>
                 <option value="brother">Brother</option>
@@ -56,13 +58,13 @@
                 <option value="lexmark">Lexmark</option>
             </select>
 
-            <select name="impressoras" id="">
-                <option selected disabled>Setor</option>
-                <option value="educação">Educação</option>
-                <option value="brother">Gabinete do Prefeito</option>
-                <option value="canon">Hospital</option>
-                <option value="hp">Esporte</option>
-                <option value="lexmark">Denutran</option>
+            <select class="select__cadastro"  name="setores" id="">
+                <option selected disabled class="select__cadastro--option">Setor</option>
+                <option value="educação" class="select__cadastro--option">Educação</option>
+                <option value="brother" class="select__cadastro--option">Gabinete do Prefeito</option>
+                <option value="canon" class="select__cadastro--option">Hospital</option>
+                <option value="hp" class="select__cadastro--option">Esporte</option>
+                <option value="lexmark" class="select__cadastro--option">Denutran</option>
             </select>
 
             <input type="datetime-local" class="data">

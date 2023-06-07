@@ -6,9 +6,63 @@
         font-weight: bold;
         font-size: 3rem;
         color: $cor-link;
+        margin-bottom: 2rem;
     }
 
     .form__cadastro {
-        
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 1rem;
+
+        .select__cadastro {
+            border: none;
+            padding: .5rem;
+            color: $cor-link;
+            font-family: $fonte-corpo;
+            font-size: 1.4rem;
+            border-radius: 10px;
+            box-shadow: 1px 1px 10px 1px $cor-link;
+            background: transparent;
+        }
+
+        .select__cadastro--option {
+            background-color: rgba(255,255,255, 0.5);
+        }
+
+        .data {
+            border: none;
+            padding: .5rem;
+            color: $cor-link;
+            font-family: $fonte-corpo;
+            font-size: 1.4rem;
+            border-radius: 10px;
+            box-shadow: 1px 1px 10px 1px $cor-link;
+            background: transparent;
+        }
+
+        .btn__salvar {
+            border: none;
+            font-family: $fonte-corpo;
+            font-size: 1.4rem;
+            padding: .4rem;
+            border-radius: 20px;
+            background-color: $cor-link;
+            color: #000;
+            cursor: pointer;
+            width: 100px;
+            font-weight: bold;
+            box-shadow: 4px 0px 5px 1px #fff;
+
+            &:hover {
+                box-shadow: 4px 0px 5px 1px $cor-link;
+                transition: all .5s;
+                background-color: transparent;
+                color: #fff;
+            }
+        }
+
+
+
     }
 }
