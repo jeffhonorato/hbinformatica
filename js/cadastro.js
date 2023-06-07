@@ -29,6 +29,16 @@ btnSalvar.addEventListener("click", (e) => {
     const janeiro = document.querySelector(".js-janeiro");
     janeiro.appendChild(janeiro_cards);
 
+    recarga.value = "";
+    impressora.value = "";
+    setor.value = "";
+    dataAtual.value = "";
+
+    const recargas_lista = [];
+    recargas_lista.push(janeiro_cards);
+    
+    console.log(recargas_lista);
+
 
 });
 
