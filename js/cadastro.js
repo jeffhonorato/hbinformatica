@@ -34,10 +34,7 @@ btnSalvar.addEventListener("click", (e) => {
     
     console.log(recargas_lista);
 
-    recargas.value = "";
-    impressoras.value = "";
-    setores.value = "";
-    data.value = "";
+   
 
 
 });
