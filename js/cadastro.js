@@ -8,12 +8,12 @@ const recargas_lista = [];
 
 btnSalvar.addEventListener("click", (e) => {
     e.preventDefault();
+    e.stopPropagation();
 
     const recarga = recargas.value;
     const impressora = impressoras.value;
     const setor = setores.value;
     const mes = meses.value;
-    // const dataAtual = data.value;
 
     const dataPc = () => {
         const dataAtualPc = new Date()
@@ -86,16 +86,25 @@ btnSalvar.addEventListener("click", (e) => {
         fevereiroImpressora.innerText = `Impressora: ${impressora}`;
         divFevereiroCard.appendChild(fevereiroImpressora);
 
+        const fevereiroSetor = document.createElement("p");
+        fevereiroSetor.classList.add("card__setor");
+        fevereiroSetor.innerText = `Setor: ${setor}`;
+        divFevereiroCard.appendChild(fevereiroSetor);
 
+        const fevereiroData = document.createElement("p");
+        fevereiroData.classList.add("card__data");
+        fevereiroData.innerText = `Data: ${dataPc()}`;
+        divFevereiroCard.appendChild(fevereiroData);
 
+        const fevereiroHora = document.createElement("p");
+        fevereiroHora.classList.add("card__hora");
+        fevereiroHora.innerText = `Data: ${horaPc()}`;
+        divFevereiroCard.appendChild(fevereiroHora);
 
         if(mes === "Fevereiro") {
             fevereiro__cards.appendChild(divFevereiroCard);
         }
     }
-
-   
-
 
     janeiro();
     fevereiro();
