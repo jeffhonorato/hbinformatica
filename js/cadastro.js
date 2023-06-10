@@ -13,29 +13,57 @@ btnSalvar.addEventListener("click", (e) => {
     const impressora = impressoras.value;
     const setor = setores.value;
     const mes = meses.value;
-    const dataAtual = data.value;
+    // const dataAtual = data.value;
+
+    const dataPc = () => {
+        const dataAtualPc = new Date()
+        const dia = String(dataAtualPc.getDate()).padStart(2, '0');
+        const mes = String(dataAtualPc.getMonth() + 1).padStart(2, '0');
+        const ano = String(dataAtualPc.getFullYear()).padStart(2, '0');
+
+        const dataAtualPcFull = `${dia}/${mes}/${ano}`
+        return dataAtualPcFull;
+    }
+
+    const janeiro = () => {
+        const janeiro_cards = document.querySelector(".js-janeiro-cards");
+        const divJaneiroCard = document.createElement("div");
+        divJaneiroCard.classList.add("janeiro__card");
+        janeiro_cards.appendChild(divJaneiroCard);
     
-
-    const janeiro_cards = document.querySelector(".js-janeiro-cards");
-
-    janeiro_cards.innerHTML = `
-    <div class="janeiro__card">
-        <p class="card__recarga"><strong>Recarga:</strong> ${recarga}</p>
-        <p class="card__impressora"><strong>Impressora:</strong> ${impressora}</p>
-        <p class="card__setor"><strong>Setor:</strong> ${setor}</p>
-        <p class="card__data"><strong>Data:</strong> ${dataAtual}</p>
-    </div>
-    `
-
-    const janeiro = document.querySelector(".js-janeiro");
-    janeiro.appendChild(janeiro_cards);
-
-    recargas_lista.push(janeiro_cards);
+        const janeiroRecarga = document.createElement("p");
+        janeiroRecarga.classList.add("card__recarga");
+        janeiroRecarga.innerText = `Tipo de Recarga- ${recarga}`;
+        divJaneiroCard.appendChild(janeiroRecarga);
+        
+        const janeiroImpressora = document.createElement("p");
+        janeiroImpressora.classList.add("card__impressora");
+        janeiroImpressora.innerText = `Impressora- ${impressora}`;
+        divJaneiroCard.appendChild(janeiroImpressora);
     
-    console.log(recargas_lista);
+        const janeiroSetor = document.createElement("p");
+        janeiroSetor.classList.add("card__setor");
+        janeiroSetor.innerText = `Local- ${setor}`;
+        divJaneiroCard.appendChild(janeiroSetor);
+    
+        const janeiroData = document.createElement("p");
+        janeiroData.classList.add("card__data");
+        janeiroData.innerText = `Data- ${dataPc()}`;
+        divJaneiroCard.appendChild(janeiroData);
+    }
+
+    const fevereiro = () => {
+        const fevereiro_cards = document.querySelector(".js-fevereiro-cards");
+        const divFevereiroCard = document.createElement("div");
+        divFevereiroCard.classList.add("janeiro__card");
+        fevereiro_cards.appendChild(divFevereiroCard);
+    }
 
    
 
+
+    janeiro();
+    fevereiro()
 
 });
 
