@@ -4,7 +4,7 @@ const setores = document.querySelector(".js-cadastro-setores");
 const meses = document.querySelector(".js-cadastro-meses");
 const data = document.querySelector('input[type="datetime-local"]');
 const btnSalvar = document.querySelector(".js-btn-cadastro-salvar");
-const recargas_lista = [];
+const recargas_janeiroLista = [];
 
 btnSalvar.addEventListener("click", (e) => {
     e.preventDefault();
@@ -68,7 +68,12 @@ btnSalvar.addEventListener("click", (e) => {
 
         if(mes === "Janeiro") {
             janeiro_cards.appendChild(divJaneiroCard);
+            alert("Impressora Cadastrada Com Sucesso!");
+            recargas_janeiroLista.push(divJaneiroCard);
+
         }
+
+        console.log(recargas_janeiroLista);
     }
 
     const fevereiro = () => {
@@ -103,6 +108,10 @@ btnSalvar.addEventListener("click", (e) => {
 
         if(mes === "Fevereiro") {
             fevereiro__cards.appendChild(divFevereiroCard);
+            alert("Impressora Cadastrada Com Sucesso!");
+
+           
+
         }
     }
 
