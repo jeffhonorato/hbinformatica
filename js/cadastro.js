@@ -36,48 +36,69 @@ btnSalvar.addEventListener("click", (e) => {
     }
 
     const janeiro = () => {
-        const janeiro_cards = document.querySelector(".cards__cadastro");
+        const janeiro_cards = document.querySelector(".janeiro__cards");
         const divJaneiroCard = document.createElement("div");
         divJaneiroCard.classList.add("card__cadastro");
-        janeiro_cards.appendChild(divJaneiroCard);
+        
     
         const janeiroRecarga = document.createElement("p");
         janeiroRecarga.classList.add("card__recarga");
-        janeiroRecarga.innerText = `Tipo de Recarga- ${recarga}`;
+        janeiroRecarga.innerText = `Tipo de Recarga: ${recarga}`;
         divJaneiroCard.appendChild(janeiroRecarga);
         
         const janeiroImpressora = document.createElement("p");
         janeiroImpressora.classList.add("card__impressora");
-        janeiroImpressora.innerText = `Impressora- ${impressora}`;
+        janeiroImpressora.innerText = `Impressora: ${impressora}`;
         divJaneiroCard.appendChild(janeiroImpressora);
     
         const janeiroSetor = document.createElement("p");
         janeiroSetor.classList.add("card__setor");
-        janeiroSetor.innerText = `Local- ${setor}`;
+        janeiroSetor.innerText = `Local: ${setor}`;
         divJaneiroCard.appendChild(janeiroSetor);
     
         const janeiroData = document.createElement("p");
         janeiroData.classList.add("card__data");
-        janeiroData.innerText = `Data- ${dataPc()}`;
+        janeiroData.innerText = `Data: ${dataPc()}`;
         divJaneiroCard.appendChild(janeiroData);
 
         const janeiroHora = document.createElement("p");
         janeiroHora.classList.add("card__hora");
-        janeiroHora.innerText = `Hora- ${horaPc()}`;
+        janeiroHora.innerText = `Hora: ${horaPc()}`;
         divJaneiroCard.appendChild(janeiroHora);
+
+        if(mes === "Janeiro") {
+            janeiro_cards.appendChild(divJaneiroCard);
+        }
     }
 
-    // const fevereiro = () => {
-    //     const fevereiro_cards = document.querySelector("cards__cadastro");
-    //     const divFevereiroCard = document.createElement("div");
-    //     divFevereiroCard.classList.add("card__cadastro");
-    //     fevereiro_cards.appendChild(divFevereiroCard);
-    // }
+    const fevereiro = () => {
+        const fevereiro__cards = document.querySelector(".fevereiro__cards");
+        const divFevereiroCard = document.createElement("div");
+        divFevereiroCard.classList.add("card__cadastro");
+
+        const fevereiroRecarga = document.createElement("p");
+        fevereiroRecarga.classList.add("card__recarga");
+        fevereiroRecarga.innerText = `Recarga: ${recarga}`;
+        divFevereiroCard.appendChild(fevereiroRecarga);
+
+        const fevereiroImpressora = document.createElement("p");
+        fevereiroImpressora.classList.add("card__impressora");
+        fevereiroImpressora.innerText = `Impressora: ${impressora}`;
+        divFevereiroCard.appendChild(fevereiroImpressora);
+
+
+
+
+        if(mes === "Fevereiro") {
+            fevereiro__cards.appendChild(divFevereiroCard);
+        }
+    }
 
    
 
 
     janeiro();
+    fevereiro();
 
 });
 
