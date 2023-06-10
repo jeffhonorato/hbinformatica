@@ -26,9 +26,9 @@ btnSalvar.addEventListener("click", (e) => {
     }
 
     const janeiro = () => {
-        const janeiro_cards = document.querySelector(".js-janeiro-cards");
+        const janeiro_cards = document.querySelector(".cards__cadastro");
         const divJaneiroCard = document.createElement("div");
-        divJaneiroCard.classList.add("janeiro__card");
+        divJaneiroCard.classList.add("card__cadastro");
         janeiro_cards.appendChild(divJaneiroCard);
     
         const janeiroRecarga = document.createElement("p");
@@ -53,9 +53,9 @@ btnSalvar.addEventListener("click", (e) => {
     }
 
     const fevereiro = () => {
-        const fevereiro_cards = document.querySelector(".js-fevereiro-cards");
+        const fevereiro_cards = document.querySelector("cards__cadastro");
         const divFevereiroCard = document.createElement("div");
-        divFevereiroCard.classList.add("janeiro__card");
+        divFevereiroCard.classList.add("card__cadastro");
         fevereiro_cards.appendChild(divFevereiroCard);
     }
 
@@ -63,7 +63,7 @@ btnSalvar.addEventListener("click", (e) => {
 
 
     janeiro();
-    fevereiro()
+    fevereiro();
 
 });
 
