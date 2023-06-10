@@ -20,9 +20,19 @@ btnSalvar.addEventListener("click", (e) => {
         const dia = String(dataAtualPc.getDate()).padStart(2, '0');
         const mes = String(dataAtualPc.getMonth() + 1).padStart(2, '0');
         const ano = String(dataAtualPc.getFullYear()).padStart(2, '0');
+      
 
         const dataAtualPcFull = `${dia}/${mes}/${ano}`
         return dataAtualPcFull;
+    }
+
+    const horaPc = () => {
+        const horaAtual = new Date()
+        const hora = horaAtual.getHours();
+        const minutos = horaAtual.getMinutes();
+
+        const horaAtualFull = `${hora}:${minutos}`
+        return horaAtualFull;
     }
 
     const janeiro = () => {
@@ -50,20 +60,24 @@ btnSalvar.addEventListener("click", (e) => {
         janeiroData.classList.add("card__data");
         janeiroData.innerText = `Data- ${dataPc()}`;
         divJaneiroCard.appendChild(janeiroData);
+
+        const janeiroHora = document.createElement("p");
+        janeiroHora.classList.add("card__hora");
+        janeiroHora.innerText = `Hora- ${horaPc()}`;
+        divJaneiroCard.appendChild(janeiroHora);
     }
 
-    const fevereiro = () => {
-        const fevereiro_cards = document.querySelector("cards__cadastro");
-        const divFevereiroCard = document.createElement("div");
-        divFevereiroCard.classList.add("card__cadastro");
-        fevereiro_cards.appendChild(divFevereiroCard);
-    }
+    // const fevereiro = () => {
+    //     const fevereiro_cards = document.querySelector("cards__cadastro");
+    //     const divFevereiroCard = document.createElement("div");
+    //     divFevereiroCard.classList.add("card__cadastro");
+    //     fevereiro_cards.appendChild(divFevereiroCard);
+    // }
 
    
 
 
     janeiro();
-    fevereiro();
 
 });
 
