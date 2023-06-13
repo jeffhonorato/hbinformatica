@@ -47,8 +47,13 @@ const janeiro = () => {
     janeiroBtnExcluir.innerText= "Excluir";
     divJaneiroCard.appendChild(janeiroBtnExcluir);
 
-    janeiro_cards.appendChild(divJaneiroCard);
-    recargas_janeiroLista.push(divJaneiroCard);
+    if(mes === "Janeiro") {
+        alert("Impressora Cadastrada Com Sucesso!");
+        janeiro_cards.appendChild(divJaneiroCard);
+        recargas_janeiroLista.push(divJaneiroCard);
+    }
+
+  
 
    
 }
@@ -116,9 +121,8 @@ btnSalvar.addEventListener("click", (e) => {
     e.preventDefault();
     e.stopPropagation();
 
-    if(mes === "Janeiro") {
-        janeiro();
-        alert("Impressora Cadastrada Com Sucesso!");
-    }
+  
+
+    janeiro();
 });
 
