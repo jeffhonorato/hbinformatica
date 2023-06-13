@@ -5,14 +5,16 @@ const meses = document.querySelector(".js-cadastro-meses");
 const data = document.querySelector('input[type="datetime-local"]');
 const btnSalvar = document.querySelector(".js-btn-cadastro-salvar");
 
-const recarga = recargas.value;
-const impressora = impressoras.value;
-const setor = setores.value;
-const mes = meses.value;
 
 const recargas_janeiroLista = [];
 
 const janeiro = () => {
+
+    const recarga = recargas.value;
+    const impressora = impressoras.value;
+    const setor = setores.value;
+    
+    
     const janeiro_cards = document.querySelector(".janeiro__cards");
     const divJaneiroCard = document.createElement("div");
     divJaneiroCard.classList.add("card__cadastro");
@@ -47,18 +49,20 @@ const janeiro = () => {
     janeiroBtnExcluir.innerText= "Excluir";
     divJaneiroCard.appendChild(janeiroBtnExcluir);
 
-    if(mes === "Janeiro") {
-        alert("Impressora Cadastrada Com Sucesso!");
-        janeiro_cards.appendChild(divJaneiroCard);
-        recargas_janeiroLista.push(divJaneiroCard);
-    }
+    janeiro_cards.appendChild(divJaneiroCard);
+    recargas_janeiroLista.push(divJaneiroCard);
+    alert("Janeiro");
 
-  
-
+    console.log("Janeiro")
    
 }
 
 const fevereiro = () => {
+    const recarga = recargas.value;
+    const impressora = impressoras.value;
+    const setor = setores.value;
+
+
     const fevereiro__cards = document.querySelector(".fevereiro__cards");
     const divFevereiroCard = document.createElement("div");
     divFevereiroCard.classList.add("card__cadastro");
@@ -88,13 +92,15 @@ const fevereiro = () => {
     fevereiroHora.innerText = `Data: ${horaPc()}`;
     divFevereiroCard.appendChild(fevereiroHora);
 
-    if(mes === "Fevereiro") {
-        fevereiro__cards.appendChild(divFevereiroCard);
-        alert("Impressora Cadastrada Com Sucesso!");
+    const fevereiroBtnExcluir = document.createElement("p");
+    fevereiroBtnExcluir.classList.add("card__btnExcluir")
+    fevereiroBtnExcluir.innerText= "Excluir";
+    divFevereiroCard.appendChild(fevereiroBtnExcluir);
 
-       
+    fevereiro__cards.appendChild(divFevereiroCard);
+    alert("Fevereiro");
 
-    }
+    console.log("Fevereiro")
 }
 
 const dataPc = () => {
@@ -120,9 +126,18 @@ const horaPc = () => {
 btnSalvar.addEventListener("click", (e) => {
     e.preventDefault();
     e.stopPropagation();
+    
+    const mes = meses.value;
+    if (mes === "Janeiro") {
+        janeiro();
+       
+    }
 
-  
-
-    janeiro();
+    if (mes === "Fevereiro") {
+        fevereiro();
+    }
+    
+    console.log(mes.value)
+    console.log()
 });
 
