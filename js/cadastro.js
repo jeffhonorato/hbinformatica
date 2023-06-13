@@ -136,8 +136,5 @@ btnSalvar.addEventListener("click", (e) => {
     if (mes === "Fevereiro") {
         fevereiro();
     }
-    
-    console.log(mes.value)
-    console.log()
 });
 
