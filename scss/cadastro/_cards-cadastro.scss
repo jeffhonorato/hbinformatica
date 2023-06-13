@@ -75,6 +75,26 @@
             font-size: 1.3rem;
         }
 
+        .card__btnExcluir {
+            padding: .4rem;
+            font-family: $fonte-corpo;
+            font-size: 1.2rem;
+            cursor: pointer;
+            width: 100px;
+            border-radius: 20px;
+            background-color: #ff0000;
+            color:#fff;
+            margin: .5rem auto;
+            font-weight: bold;
+            box-shadow: 4px 0px 5px 1px #000;
+
+               &:hover {
+                box-shadow: 4px 0px 5px 1px #fff;
+                transition: all .5s;
+            }
+
+        }
+
 
 
 

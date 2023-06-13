@@ -66,11 +66,15 @@ btnSalvar.addEventListener("click", (e) => {
         janeiroHora.innerText = `Hora: ${horaPc()}`;
         divJaneiroCard.appendChild(janeiroHora);
 
+        const janeiroBtnExcluir = document.createElement("p");
+        janeiroBtnExcluir.classList.add("card__btnExcluir")
+        janeiroBtnExcluir.innerText= "Excluir";
+        divJaneiroCard.appendChild(janeiroBtnExcluir);
+
         if(mes === "Janeiro") {
             janeiro_cards.appendChild(divJaneiroCard);
             alert("Impressora Cadastrada Com Sucesso!");
             recargas_janeiroLista.push(divJaneiroCard);
-
         }
 
         console.log(recargas_janeiroLista);
