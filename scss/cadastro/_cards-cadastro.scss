@@ -65,9 +65,34 @@
             border: 1px solid rgba(145, 210, 61, 1);
 
             &:hover {
-                background-color: $cor-link;
+                background-color: #fff;
                 transition: all .5s;
-                box-shadow: 2px 2px 2px 2px #fff;
+                box-shadow: 2px 2px 2px 2px $cor-link;
+            }
+
+            &:hover .card__recarga {
+                color: #000;
+                transition: all .5s;
+            }
+
+            &:hover .card__impressora {
+                color: #000;
+                transition: all .5s;
+            }
+
+            &:hover .card__setor {
+                color: #000;
+                transition: all .5s;
+            }
+
+            &:hover .card__data {
+                color: #000;
+                transition: all .5s;
+            }
+
+            &:hover .card__hora {
+                color: #000;
+                transition: all .5s;
             }
         }
 
