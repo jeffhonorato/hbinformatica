@@ -103,6 +103,51 @@ const fevereiro = () => {
     console.log("Fevereiro")
 }
 
+const marco = () => {
+    const recarga = recargas.value;
+    const impressora = impressoras.value;
+    const setor = setores.value;
+
+    const marco__cards = document.querySelector(".marco__cards");
+    const divMarcoCard = document.createElement("div");
+    divMarcoCard.classList.add("card__cadastro");
+
+    const marcoRecarga = document.createElement("p");
+    marcoRecarga.classList.add("card__recarga");
+    marcoRecarga.innerText = `Recarga: ${recarga}`;
+    divMarcoCard.appendChild(marcoRecarga);
+
+    const marcoImpressora = document.createElement("p");
+    marcoImpressora.classList.add("card__impressora");
+    marcoImpressora.innerText = `Impressora: ${impressora}`;
+    divMarcoCard.appendChild(marcoImpressora);
+
+    const marcoSetor = document.createElement("p");
+    marcoSetor.classList.add("card__setor");
+    marcoSetor.innerText = `Setor: ${setor}`;
+    divMarcoCard.appendChild(marcoSetor);
+
+    const marcoData = document.createElement("p");
+    marcoData.classList.add("card__data");
+    marcoData.innerText = `Data: ${dataPc()}`;
+    divMarcoCard.appendChild(marcoData);
+
+    const marcoHora = document.createElement("p");
+    marcoHora.classList.add("card__hora");
+    marcoHora.innerText = `Data: ${horaPc()}`;
+    divMarcoCard.appendChild(marcoHora);
+
+    const marcoBtnExcluir = document.createElement("p");
+    marcoBtnExcluir.classList.add("card__btnExcluir")
+    marcoBtnExcluir.innerText= "Excluir";
+    divMarcoCard.appendChild(marcoBtnExcluir);
+
+    marco__cards.appendChild(divMarcoCard);
+    alert("Março");
+
+    console.log("Março")
+}
+
 const dataPc = () => {
     const dataAtualPc = new Date()
     const dia = String(dataAtualPc.getDate()).padStart(2, '0');
@@ -130,11 +175,14 @@ btnSalvar.addEventListener("click", (e) => {
     const mes = meses.value;
     if (mes === "Janeiro") {
         janeiro();
-       
     }
 
     if (mes === "Fevereiro") {
         fevereiro();
+    }
+
+    if (mes === "Março") {
+        marco();
     }
 });
 

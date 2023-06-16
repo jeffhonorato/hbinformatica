@@ -18,12 +18,13 @@
         .select__cadastro {
             border: none;
             padding: .5rem;
-            color: $cor-link;
+            color: #000;
             font-family: $fonte-corpo;
             font-size: 1.4rem;
             border-radius: 10px;
             box-shadow: 1px 1px 10px 1px $cor-link;
-            background: transparent;
+            background: #fff;
+            font-weight: bold;
         }
 
         .select__cadastro--option {
