@@ -462,6 +462,51 @@ const outubro = () => {
     console.log("Outubro");
 }
 
+const novembro = () => {
+    const recarga = recargas.value;
+    const impressora = impressoras.value
+    const setor = setores.value;
+
+    const novembro__cards = document.querySelector(".novembro__cards");
+    const divNovembroCard = document.createElement("div");
+    divNovembroCard.classList.add("card__cadastro");
+
+    const novembroRecarga = document.createElement("p");
+    novembroRecarga.classList.add("card__recarga");
+    novembroRecarga.innerText = `Recarga: ${recarga}`;
+    divNovembroCard.appendChild(novembroRecarga);
+
+    const novembroImpressora = document.createElement("p");
+    novembroImpressora.classList.add("card__impressora");
+    novembroImpressora.innerText = `Impressora: ${impressora}`;
+    divNovembroCard.appendChild(novembroImpressora);
+
+    const novembroSetor = document.createElement("p");
+    novembroSetor.classList.add("card__setor");
+    novembroSetor.innerText = `Setor: ${setor}`;
+    divNovembroCard.appendChild(novembroSetor);
+
+    const novembroData = document.createElement("p");
+    novembroData.classList.add("card__data");
+    novembroData.innerText = `Data: ${dataPc()}`;
+    divNovembroCard.appendChild(novembroData);
+
+    const novembroHora = document.createElement("p");
+    novembroHora.classList.add("card__hora");
+    novembroHora.innerText = `Data: ${horaPc()}`;
+    divNovembroCard.appendChild(novembroHora);
+
+    const novembroBtnExcluir = document.createElement("p");
+    novembroBtnExcluir.classList.add("card__btnExcluir")
+    novembroBtnExcluir.innerText= "Excluir";
+    divNovembroCard.appendChild(novembroBtnExcluir);
+
+    novembro__cards.appendChild(divNovembroCard);
+    alert("Novembro");
+
+    console.log("Novembro");
+}
+
 const dataPc = () => {
     const dataAtualPc = new Date()
     const dia = String(dataAtualPc.getDate()).padStart(2, '0');
@@ -525,6 +570,10 @@ btnSalvar.addEventListener("click", (e) => {
 
     if (mes === "Outubro") {
         outubro();
+    }
+
+    if (mes === "Novembro") {
+        novembro();
     }
 
 });
