@@ -6,6 +6,10 @@ const data = document.querySelector('input[type="datetime-local"]');
 const btnSalvar = document.querySelector(".js-btn-cadastro-salvar");
 
 const recargas_janeiroLista = [];
+const lista = recargas_janeiroLista;
+
+
+
 
 const janeiro = () => {
 
@@ -50,9 +54,12 @@ const janeiro = () => {
 
     janeiro_cards.appendChild(divJaneiroCard);
     recargas_janeiroLista.push(divJaneiroCard);
+
     alert("Janeiro");
 
     console.log("Janeiro")
+    console.log(recargas_janeiroLista);
+    console.log(`Janeiro ==> ${lista.length}` )
    
 }
 
@@ -616,7 +623,7 @@ btnSalvar.addEventListener("click", (e) => {
     if (mes === "Outubro") {
         outubro();
     }
-
+    
     if (mes === "Novembro") {
         novembro();
 
@@ -626,6 +633,6 @@ btnSalvar.addEventListener("click", (e) => {
         dezembro();
     }
 
-    setembro()
+    
 });
 
