@@ -192,6 +192,51 @@ const abril = () => {
     console.log("Abril")
 }
 
+const maio = () => {
+    const recarga = recargas.value;
+    const impressora = impressoras.vmaio
+    const setor = setores.value;
+
+    const maio__cards = document.querySelector(".maio__cards");
+    const divMaioCard = document.createElement("div");
+    divMaioCard.classList.add("card__cadastro");
+
+    const maioRecarga = document.createElement("p");
+    maioRecarga.classList.add("card__recarga");
+    maioRecarga.innerText = `Recarga: ${recarga}`;
+    divMaioCard.appendChild(maioRecarga);
+
+    const maioImpressora = document.createElement("p");
+    maioImpressora.classList.add("card__impressora");
+    maioImpressora.innerText = `Impressora: ${impressora}`;
+    divMaioCard.appendChild(maioImpressora);
+
+    const maioSetor = document.createElement("p");
+    maioSetor.classList.add("card__setor");
+    maioSetor.innerText = `Setor: ${setor}`;
+    divMaioCard.appendChild(maioSetor);
+
+    const maioData = document.createElement("p");
+    maioData.classList.add("card__data");
+    maioData.innerText = `Data: ${dataPc()}`;
+    divMaioCard.appendChild(maioData);
+
+    const maioHora = document.createElement("p");
+    maioHora.classList.add("card__hora");
+    maioHora.innerText = `Data: ${horaPc()}`;
+    divMaioCard.appendChild(maioHora);
+
+    const maioBtnExcluir = document.createElement("p");
+    maioBtnExcluir.classList.add("card__btnExcluir")
+    maioBtnExcluir.innerText= "Excluir";
+    divMaioCard.appendChild(maioBtnExcluir);
+
+   maio__cards.appendChild(divMaioCard);
+    alert("Maio");
+
+    console.log("Maio")
+}
+
 const dataPc = () => {
     const dataAtualPc = new Date()
     const dia = String(dataAtualPc.getDate()).padStart(2, '0');
@@ -231,6 +276,10 @@ btnSalvar.addEventListener("click", (e) => {
 
     if (mes === "Abril") {
         abril();
+    }
+
+    if (mes === "Maio") {
+        maio();
     }
 });
 
