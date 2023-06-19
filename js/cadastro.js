@@ -282,6 +282,96 @@ const junho = () => {
     console.log("Junho");
 }
 
+const julho = () => {
+    const recarga = recargas.value;
+    const impressora = impressoras.value
+    const setor = setores.value;
+
+    const julho__cards = document.querySelector(".julho__cards");
+    const divJulhoCard = document.createElement("div");
+    divJulhoCard.classList.add("card__cadastro");
+
+    const julhoRecarga = document.createElement("p");
+    julhoRecarga.classList.add("card__recarga");
+    julhoRecarga.innerText = `Recarga: ${recarga}`;
+    divJulhoCard.appendChild(julhoRecarga);
+
+    const julhoImpressora = document.createElement("p");
+    julhoImpressora.classList.add("card__impressora");
+    julhoImpressora.innerText = `Impressora: ${impressora}`;
+    divJulhoCard.appendChild(julhoImpressora);
+
+    const julhoSetor = document.createElement("p");
+    julhoSetor.classList.add("card__setor");
+    julhoSetor.innerText = `Setor: ${setor}`;
+    divJulhoCard.appendChild(julhoSetor);
+
+    const julhoData = document.createElement("p");
+    julhoData.classList.add("card__data");
+    julhoData.innerText = `Data: ${dataPc()}`;
+    divJulhoCard.appendChild(julhoData);
+
+    const julhoHora = document.createElement("p");
+    julhoHora.classList.add("card__hora");
+    julhoHora.innerText = `Data: ${horaPc()}`;
+    divJulhoCard.appendChild(julhoHora);
+
+    const julhoBtnExcluir = document.createElement("p");
+    julhoBtnExcluir.classList.add("card__btnExcluir")
+    julhoBtnExcluir.innerText= "Excluir";
+    divJulhoCard.appendChild(julhoBtnExcluir);
+
+   julho__cards.appendChild(divJulhoCard);
+    alert("Julho");
+
+    console.log("Julho");
+}
+
+const agosto = () => {
+    const recarga = recargas.value;
+    const impressora = impressoras.value
+    const setor = setores.value;
+
+    const agosto__cards = document.querySelector(".agosto__cards");
+    const divAgostoCard = document.createElement("div");
+    divAgostoCard.classList.add("card__cadastro");
+
+    const agostoRecarga = document.createElement("p");
+    agostoRecarga.classList.add("card__recarga");
+    agostoRecarga.innerText = `Recarga: ${recarga}`;
+    divAgostoCard.appendChild(agostoRecarga);
+
+    const agostoImpressora = document.createElement("p");
+    agostoImpressora.classList.add("card__impressora");
+    agostoImpressora.innerText = `Impressora: ${impressora}`;
+    divAgostoCard.appendChild(agostoImpressora);
+
+    const agostoSetor = document.createElement("p");
+    agostoSetor.classList.add("card__setor");
+    agostoSetor.innerText = `Setor: ${setor}`;
+    divAgostoCard.appendChild(agostoSetor);
+
+    const agostoData = document.createElement("p");
+    agostoData.classList.add("card__data");
+    agostoData.innerText = `Data: ${dataPc()}`;
+    divAgostoCard.appendChild(agostoData);
+
+    const agostoHora = document.createElement("p");
+    agostoHora.classList.add("card__hora");
+    agostoHora.innerText = `Data: ${horaPc()}`;
+    divAgostoCard.appendChild(agostoHora);
+
+    const agostoBtnExcluir = document.createElement("p");
+    agostoBtnExcluir.classList.add("card__btnExcluir")
+    agostoBtnExcluir.innerText= "Excluir";
+    divAgostoCard.appendChild(agostoBtnExcluir);
+
+   agosto__cards.appendChild(divAgostoCard);
+    alert("Agosto");
+
+    console.log("Agosto");
+}
+
 const dataPc = () => {
     const dataAtualPc = new Date()
     const dia = String(dataAtualPc.getDate()).padStart(2, '0');
@@ -329,6 +419,14 @@ btnSalvar.addEventListener("click", (e) => {
 
     if (mes === "Junho") {
         junho();
+    }
+
+    if (mes === "Julho") {
+        julho();
+    }
+
+    if (mes === "Agosto") {
+        agosto();
     }
 });
 
