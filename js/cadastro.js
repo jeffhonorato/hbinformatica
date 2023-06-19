@@ -372,6 +372,96 @@ const agosto = () => {
     console.log("Agosto");
 }
 
+const setembro = () => {
+    const recarga = recargas.value;
+    const impressora = impressoras.value
+    const setor = setores.value;
+
+    const setembro__cards = document.querySelector(".setembro__cards");
+    const divSetembroCard = document.createElement("div");
+    divSetembroCard.classList.add("card__cadastro");
+
+    const setembroRecarga = document.createElement("p");
+    setembroRecarga.classList.add("card__recarga");
+    setembroRecarga.innerText = `Recarga: ${recarga}`;
+    divSetembroCard.appendChild(setembroRecarga);
+
+    const setembroImpressora = document.createElement("p");
+    setembroImpressora.classList.add("card__impressora");
+    setembroImpressora.innerText = `Impressora: ${impressora}`;
+    divSetembroCard.appendChild(setembroImpressora);
+
+    const setembroSetor = document.createElement("p");
+    setembroSetor.classList.add("card__setor");
+    setembroSetor.innerText = `Setor: ${setor}`;
+    divSetembroCard.appendChild(setembroSetor);
+
+    const setembroData = document.createElement("p");
+    setembroData.classList.add("card__data");
+    setembroData.innerText = `Data: ${dataPc()}`;
+    divSetembroCard.appendChild(setembroData);
+
+    const setembroHora = document.createElement("p");
+    setembroHora.classList.add("card__hora");
+    setembroHora.innerText = `Data: ${horaPc()}`;
+    divSetembroCard.appendChild(setembroHora);
+
+    const setembroBtnExcluir = document.createElement("p");
+    setembroBtnExcluir.classList.add("card__btnExcluir")
+    setembroBtnExcluir.innerText= "Excluir";
+    divSetembroCard.appendChild(setembroBtnExcluir);
+
+    setembro__cards.appendChild(divSetembroCard);
+    alert("Setembro");
+
+    console.log("Setembro");
+}
+
+const outubro = () => {
+    const recarga = recargas.value;
+    const impressora = impressoras.value
+    const setor = setores.value;
+
+    const setembro__cards = document.querySelector(".setembro__cards");
+    const divSetembroCard = document.createElement("div");
+    divSetembroCard.classList.add("card__cadastro");
+
+    const setembroRecarga = document.createElement("p");
+    setembroRecarga.classList.add("card__recarga");
+    setembroRecarga.innerText = `Recarga: ${recarga}`;
+    divSetembroCard.appendChild(setembroRecarga);
+
+    const setembroImpressora = document.createElement("p");
+    setembroImpressora.classList.add("card__impressora");
+    setembroImpressora.innerText = `Impressora: ${impressora}`;
+    divSetembroCard.appendChild(setembroImpressora);
+
+    const setembroSetor = document.createElement("p");
+    setembroSetor.classList.add("card__setor");
+    setembroSetor.innerText = `Setor: ${setor}`;
+    divSetembroCard.appendChild(setembroSetor);
+
+    const setembroData = document.createElement("p");
+    setembroData.classList.add("card__data");
+    setembroData.innerText = `Data: ${dataPc()}`;
+    divSetembroCard.appendChild(setembroData);
+
+    const setembroHora = document.createElement("p");
+    setembroHora.classList.add("card__hora");
+    setembroHora.innerText = `Data: ${horaPc()}`;
+    divSetembroCard.appendChild(setembroHora);
+
+    const setembroBtnExcluir = document.createElement("p");
+    setembroBtnExcluir.classList.add("card__btnExcluir")
+    setembroBtnExcluir.innerText= "Excluir";
+    divSetembroCard.appendChild(setembroBtnExcluir);
+
+    setembro__cards.appendChild(divSetembroCard);
+    alert("Setembro");
+
+    console.log("Setembro");
+}
+
 const dataPc = () => {
     const dataAtualPc = new Date()
     const dia = String(dataAtualPc.getDate()).padStart(2, '0');
@@ -428,5 +518,11 @@ btnSalvar.addEventListener("click", (e) => {
     if (mes === "Agosto") {
         agosto();
     }
+
+    if (mes === "Setembro") {
+        setembro();
+    }
+
+   
 });
 
