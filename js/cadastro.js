@@ -5,7 +5,6 @@ const meses = document.querySelector(".js-cadastro-meses");
 const data = document.querySelector('input[type="datetime-local"]');
 const btnSalvar = document.querySelector(".js-btn-cadastro-salvar");
 
-
 const recargas_janeiroLista = [];
 
 const janeiro = () => {
@@ -148,6 +147,51 @@ const marco = () => {
     console.log("Março")
 }
 
+const abril = () => {
+    const recarga = recargas.value;
+    const impressora = impressoras.value;
+    const setor = setores.value;
+
+    const abril__cards = document.querySelector(".abril__cards");
+    const divAbrilCard = document.createElement("div");
+    divAbrilCard.classList.add("card__cadastro");
+
+    const abrilRecarga = document.createElement("p");
+    abrilRecarga.classList.add("card__recarga");
+    abrilRecarga.innerText = `Recarga: ${recarga}`;
+    divAbrilCard.appendChild(abrilRecarga);
+
+    const abrilImpressora = document.createElement("p");
+    abrilImpressora.classList.add("card__impressora");
+    abrilImpressora.innerText = `Impressora: ${impressora}`;
+    divAbrilCard.appendChild(abrilImpressora);
+
+    const abrilSetor = document.createElement("p");
+    abrilSetor.classList.add("card__setor");
+    abrilSetor.innerText = `Setor: ${setor}`;
+    divAbrilCard.appendChild(abrilSetor);
+
+    const abrilData = document.createElement("p");
+    abrilData.classList.add("card__data");
+    abrilData.innerText = `Data: ${dataPc()}`;
+    divAbrilCard.appendChild(abrilData);
+
+    const abrilHora = document.createElement("p");
+    abrilHora.classList.add("card__hora");
+    abrilHora.innerText = `Data: ${horaPc()}`;
+    divAbrilCard.appendChild(abrilHora);
+
+    const abrilBtnExcluir = document.createElement("p");
+    abrilBtnExcluir.classList.add("card__btnExcluir")
+    abrilBtnExcluir.innerText= "Excluir";
+    divAbrilCard.appendChild(abrilBtnExcluir);
+
+   abril__cards.appendChild(divAbrilCard);
+    alert("Abril");
+
+    console.log("Abril")
+}
+
 const dataPc = () => {
     const dataAtualPc = new Date()
     const dia = String(dataAtualPc.getDate()).padStart(2, '0');
@@ -183,6 +227,10 @@ btnSalvar.addEventListener("click", (e) => {
 
     if (mes === "Março") {
         marco();
+    }
+
+    if (mes === "Abril") {
+        abril();
     }
 });
 
