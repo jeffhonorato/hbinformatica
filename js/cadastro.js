@@ -379,7 +379,7 @@ const setembro = () => {
 
     const setembro__cards = document.querySelector(".setembro__cards");
     const divSetembroCard = document.createElement("div");
-    divSetembroCard.classList.add("card__cadastro");
+    divSetembroCard.classList.add("card__cadastro"); 
 
     const setembroRecarga = document.createElement("p");
     setembroRecarga.classList.add("card__recarga");
@@ -626,5 +626,6 @@ btnSalvar.addEventListener("click", (e) => {
         dezembro();
     }
 
+    setembro()
 });
 
