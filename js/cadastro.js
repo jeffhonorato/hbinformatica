@@ -9,8 +9,6 @@ const recargas_janeiroLista = [];
 const lista = recargas_janeiroLista;
 
 
-
-
 const janeiro = () => {
 
     const recarga = recargas.value;
