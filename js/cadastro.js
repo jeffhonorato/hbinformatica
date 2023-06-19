@@ -194,7 +194,7 @@ const abril = () => {
 
 const maio = () => {
     const recarga = recargas.value;
-    const impressora = impressoras.vmaio
+    const impressora = impressoras.value;
     const setor = setores.value;
 
     const maio__cards = document.querySelector(".maio__cards");
@@ -235,6 +235,51 @@ const maio = () => {
     alert("Maio");
 
     console.log("Maio")
+}
+
+const junho = () => {
+    const recarga = recargas.value;
+    const impressora = impressoras.value
+    const setor = setores.value;
+
+    const junho__cards = document.querySelector(".junho__cards");
+    const divJunhoCard = document.createElement("div");
+    divJunhoCard.classList.add("card__cadastro");
+
+    const junhoRecarga = document.createElement("p");
+    junhoRecarga.classList.add("card__recarga");
+    junhoRecarga.innerText = `Recarga: ${recarga}`;
+    divJunhoCard.appendChild(junhoRecarga);
+
+    const junhoImpressora = document.createElement("p");
+    junhoImpressora.classList.add("card__impressora");
+    junhoImpressora.innerText = `Impressora: ${impressora}`;
+    divJunhoCard.appendChild(junhoImpressora);
+
+    const junhoSetor = document.createElement("p");
+    junhoSetor.classList.add("card__setor");
+    junhoSetor.innerText = `Setor: ${setor}`;
+    divJunhoCard.appendChild(junhoSetor);
+
+    const junhoData = document.createElement("p");
+    junhoData.classList.add("card__data");
+    junhoData.innerText = `Data: ${dataPc()}`;
+    divJunhoCard.appendChild(junhoData);
+
+    const junhoHora = document.createElement("p");
+    junhoHora.classList.add("card__hora");
+    junhoHora.innerText = `Data: ${horaPc()}`;
+    divJunhoCard.appendChild(junhoHora);
+
+    const junhoBtnExcluir = document.createElement("p");
+    junhoBtnExcluir.classList.add("card__btnExcluir")
+    junhoBtnExcluir.innerText= "Excluir";
+    divJunhoCard.appendChild(junhoBtnExcluir);
+
+   junho__cards.appendChild(divJunhoCard);
+    alert("Junho");
+
+    console.log("Junho");
 }
 
 const dataPc = () => {
@@ -280,6 +325,10 @@ btnSalvar.addEventListener("click", (e) => {
 
     if (mes === "Maio") {
         maio();
+    }
+
+    if (mes === "Junho") {
+        junho();
     }
 });
 
