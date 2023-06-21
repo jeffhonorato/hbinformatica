@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;1,900&family=Rowdies&display=swap" rel="stylesheet">
     <!-- Animations - Icons -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="./js/meses-menu.js" defer></script>
     <script src="./js/menu-mobile.js" defer></script>
     <!-- TÍTULO -->
     <title>HB Informatica</title>
@@ -22,26 +23,22 @@
     <header class="header">
 
         <picture>
-            <img src="./img/menu/ico-menu.png" alt="" class="icone__menu">
+            <img src="./img/menu/ico-menu.png" alt="" class="icone__menu js-menu-mobile">
         </picture>
 
-       <div class="cabecalho">
+       <div class="cabecalho js-nav-links">
 
 
-            <ul class="nav__links js-nav-links">
+            <ul class="nav__links ">
+
                 <a href="#" class="nav__link">
-                    <li class="nav__nome">Inicio</li>
+                    <img src="./img/menu/estatistica.png" alt="" class="icone__menu--nav" title="Estatisticas">
                 </a>
 
                 <a href="./pages/cadastro.html" class="nav__link">
-                    <li class="nav__nome">Cadastro</li>
+                    <img src="./img/menu/cadastro.png" alt="" class="icone__menu--nav" title="Cadastro de Clientes">
                 </a>
-            </ul>
-
-            <picture>
-                <img src="./img/logo.png" alt="" class="logo">
-            </picture>
-        
+            </ul>        
         </div>
 
      
