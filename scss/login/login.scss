@@ -38,8 +38,15 @@
     padding: .5rem;
     display: flex;
     flex-direction: column;
+    position: relative;
 
+}
 
+.login__ico--monster {
+    position: absolute;
+    width: 100px;
+    right: -60px;
+    top: -40px;
 }
 
 .form__login--subtitulo {
