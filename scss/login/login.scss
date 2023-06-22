@@ -49,6 +49,29 @@
     text-align: center;
 }
 
-.div__usuario {
-    margin-bottom: 1rem;
+.label__usuario, 
+.label__senha {
+    font-family: $fonte-corpo;
+    font-size: 1.4rem;
+}
+
+.label__senha {
+    margin-top: 1rem;
+}
+
+.input__usuario,
+.input__senha {
+    background: rgba(77, 110, 32, 0.46);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(16.1px);
+    -webkit-backdrop-filter: blur(16.1px);
+    border: 1px solid rgba(145, 210, 61, 1);
+    color: #fff;
+    padding: .5rem;
+    outline: none;
+}
+
+.input__senha {
+    margin-bottom: 2rem;
 }
