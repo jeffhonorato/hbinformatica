@@ -34,7 +34,12 @@
     -webkit-backdrop-filter: blur(16.1px);
     border: 1px solid rgba(145, 210, 61, 1);
     width: 320px;
-    display: block;
+    margin: 0 auto;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+
+
 }
 
 .form__login--subtitulo {
@@ -42,4 +47,8 @@
     margin-bottom: 1rem;
     font-family: $fonte-menu;
     text-align: center;
+}
+
+.div__usuario {
+    margin-bottom: 1rem;
 }
